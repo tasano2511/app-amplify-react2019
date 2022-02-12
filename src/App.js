@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
+    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=6')
     //.then(res => console.log(res.data))
     .then(res=>this.setState({ todos: res.data }))
   }
